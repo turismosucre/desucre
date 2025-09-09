@@ -1,0 +1,90 @@
+/* Estilos específicos para la página de contactos.html */
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.page-title {
+    font-size: 2.8rem;
+    color: #037433; /* <-- ¡COLOR ACTUALIZADO! */
+    text-align: center;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid var(--secondary-color); /* Usando el verde institucional */
+    padding-bottom: 0.5rem;
+}
+
+.page-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.contact-card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+    border-left: 7px solid var(--secondary-color); /* Detalle con el verde institucional */
+}
+
+.contact-card h2 {
+    font-size: 1.8rem;
+    color: #037433; /* ¡COLOR ACTUALIZADO! */
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+/* Estilos para la lista de emergencias (ACTUALIZADO) */
+.emergency-lines {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.emergency-lines li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+    font-size: 1.1rem;
+    color: #000000; /* Color negro para el texto (Línea Única, etc.) */
+}
+
+.emergency-lines li:last-child {
+    border-bottom: none;
+}
+
+.emergency-lines li strong {
+    font-size: 1.5rem;
+    color: #037433; /* Color verde para el número de emergencia (123, #767, etc.) */
+}
+
+/* Estilos para la información institucional */
+.institutional-info p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #037433; /* Color verde para la información (el dato) */
+    margin: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.institutional-info p:last-child {
+    border-bottom: none;
+}
+
+.institutional-info p strong {
+    color: #000000; /* Color negro para la etiqueta (Unidad, Celular, etc.) */
+}
